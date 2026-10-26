@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<!--
+  SITE URL: https://hamburgermana3445.github.io/onlywonder/
+  If the site moves, find-and-replace that URL in this file, sitemap.xml and robots.txt
+  (it appears in: canonical, og:url, og:image, twitter:image). Nothing else depends on it.
+-->
+<title>Only Wonder | Science problems, big ideas and life lessons, drawn in light</title>
+<meta name="description" content="Only Wonder is a YouTube channel of short animations drawn entirely in code: life lessons with a twist ending, unsolved math and science problems made visible, and science news in under a minute.">
+<link rel="canonical" href="https://hamburgermana3445.github.io/onlywonder/">
+<!-- Google Search Console: paste the verification tag here, e.g.
+<meta name="google-site-verification" content="PASTE_CODE_HERE">
+-->
+<meta name="theme-color" content="#050817">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Only Wonder">
+<meta property="og:title" content="Only Wonder: science problems, big ideas and life lessons, drawn in light">
+<meta property="og:description" content="Short animations drawn entirely in code. Lessons with a twist ending, unsolved problems made visible, and a number toy you can play with.">
+<meta property="og:url" content="https://hamburgermana3445.github.io/onlywonder/">
+<meta property="og:image" content="https://hamburgermana3445.github.io/onlywonder/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Only Wonder: glowing dots and a winding road of light on a dark navy sky.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Only Wonder">
+<meta name="twitter:description" content="Science problems, big ideas and life lessons, drawn in light.">
+<meta name="twitter:image" content="https://hamburgermana3445.github.io/onlywonder/assets/og-image.jpg">
+
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+<link rel="preload" href="assets/fonts/CormorantGaramond-500-italic.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/Jost-300-normal.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script>document.documentElement.classList.add("js");</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Only Wonder",
+  "url": "https://hamburgermana3445.github.io/onlywonder/",
+  "description": "Short animations drawn entirely in code: life lessons, science problems and science news.",
+  "sameAs": ["https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#lessons">Skip to the videos</a>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="top" id="top">
+  <a class="brand" href="#hero" aria-label="Only Wonder, back to the start">
+    <span class="brand__dot" aria-hidden="true"></span>
+    <span class="brand__name">Only Wonder</span>
+  </a>
+  <nav class="top__nav" aria-label="Sections">
+    <a href="#lessons">Lessons</a>
+    <a href="#science">Science</a>
+    <a href="#play">Play</a>
+    <a href="#about">About</a>
+  </nav>
+  <a class="btn btn--small btn--gold" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+</header>
+
+<nav class="rail" aria-label="Journey progress">
+  <ol>
+    <li><a href="#hero" data-rail="hero"><span>Begin</span></a></li>
+    <li><a href="#lessons" data-rail="lessons"><span>Lessons</span></a></li>
+    <li><a href="#science" data-rail="science"><span>Science</span></a></li>
+    <li><a href="#news" data-rail="news"><span>News</span></a></li>
+    <li><a href="#about" data-rail="about"><span>How it's made</span></a></li>
+    <li><a href="#end" data-rail="end"><span>The view back</span></a></li>
+  </ol>
+  <i class="rail__dot" aria-hidden="true"></i>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero" data-world="hero">
+  <div class="hero__inner">
+    <p class="eyebrow reveal">A YouTube channel</p>
+    <h1 class="hero__title reveal"><span>Only</span> <span>Wonder</span></h1>
+    <p class="hero__line reveal">Science problems, big ideas and life lessons, <em>drawn in light.</em></p>
+    <div class="hero__cta reveal">
+      <a class="btn btn--gold" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+        Watch on YouTube
+      </a>
+      <a class="btn btn--ghost" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg?sub_confirmation=1" target="_blank" rel="noopener">Subscribe</a>
+    </div>
+  </div>
+  <a class="cue" href="#lessons" aria-label="Scroll to begin the journey">
+    <span class="cue__text">Scroll to travel</span>
+    <span class="cue__line" aria-hidden="true"><i></i></span>
+  </a>
+</section>
+
+<!-- fly-through: hero cloud to the road -->
+<div class="fly" data-fly aria-hidden="false">
+  <div class="fly__sticky">
+    <p class="fly__line" data-range="0.02,0.52">Every video starts with <em>one dot</em>,</p>
+    <p class="fly__line" data-range="0.42,0.96">and one rule for <em>how it moves.</em></p>
+  </div>
+</div>
+
+<!-- ============ WORLD I: LESSONS ============ -->
+<section class="world world--lessons" id="lessons" data-world="lessons" aria-labelledby="lessons-title">
+  <header class="world__intro">
+    <p class="world__num reveal" aria-hidden="true">I</p>
+    <h2 class="world__title reveal" id="lessons-title">Lessons</h2>
+    <p class="world__lede reveal">Life ideas, told in moving light. Each one looks like it's about one thing, until the ending turns it around.</p>
+    <p class="world__hint reveal" aria-hidden="true">Keep scrolling. The road turns sideways</p>
+  </header>
+
+  <div class="hscroll" data-hscroll>
+    <div class="hscroll__sticky">
+      <div class="hscroll__track">
+
+        <article class="station" style="--tone: var(--gold)">
+          <figure class="frame">
+            <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/seeds.jpg" data-src="assets/video/seeds.mp4" aria-label="Animation: a small light walking a long dark road"></video>
+            <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+            <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+          </figure>
+          <div class="caption">
+            <p class="caption__kicker"><span>01</span> Start here · 47 s</p>
+            <h3 class="caption__title">Watch Where It Walks</h3>
+            <p class="caption__hook">A small light walks a long dark road, giving pieces of itself to strangers. Every time, it drops a seed. Nothing ever grows.</p>
+          </div>
+        </article>
+
+        <article class="station" style="--tone: var(--peach)">
+          <figure class="frame">
+            <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/stone.jpg" data-src="assets/video/stone.mp4" aria-label="Animation: a hammer striking a stone"></video>
+            <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+            <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+          </figure>
+          <div class="caption">
+            <p class="caption__kicker"><span>02</span> Persistence · 45 s</p>
+            <h3 class="caption__title">Which Hit Broke the Stone?</h3>
+            <p class="caption__hook">A stonecutter strikes the same rock a hundred times, and not one crack shows on the outside.</p>
+          </div>
+        </article>
+
+        <article class="station" style="--tone: var(--gold-2)">
+          <figure class="frame">
+            <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/light.jpg" data-src="assets/video/light.mp4" aria-label="Animation: a small amber dot watching brighter dots"></video>
+            <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+            <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+          </figure>
+          <div class="caption">
+            <p class="caption__kicker"><span>03</span> Comparison · 45 s</p>
+            <h3 class="caption__title">Why Does Everyone Else Shine Brighter?</h3>
+            <p class="caption__hook">A small dot watches the brighter ones around it, and every time it looks, it gets a little smaller.</p>
+          </div>
+        </article>
+
+        <article class="station" style="--tone: var(--rose)">
+          <figure class="frame">
+            <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/life.jpg" data-src="assets/video/life.mp4" aria-label="Animation: dots orbiting a central dot over a lifetime"></video>
+            <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+            <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+          </figure>
+          <div class="caption">
+            <p class="caption__kicker"><span>04</span> People · 50 s</p>
+            <h3 class="caption__title">Everyone Who Walks Through Your Life</h3>
+            <p class="caption__hook">A whole life in one minute, told by the dots that come into its orbit, and the ones that drift away.</p>
+          </div>
+        </article>
+
+        <article class="station" style="--tone: var(--ice)">
+          <figure class="frame">
+            <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/one-percent.jpg" data-src="assets/video/one-percent.mp4" aria-label="Animation: a line slowly rising over a year"></video>
+            <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+            <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+          </figure>
+          <div class="caption">
+            <p class="caption__kicker"><span>05</span> Habits · 42 s</p>
+            <h3 class="caption__title">Get 1% Better Every Day</h3>
+            <p class="caption__hook">For months, the line barely moves. Stay with it until day 365.</p>
+          </div>
+        </article>
+
+        <div class="station station--end">
+          <p class="end-note">Five roads.<br><em>Five endings you won't see coming.</em></p>
+          <a class="btn btn--ghost" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg" target="_blank" rel="noopener">More on YouTube</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Toy 1: life dots -->
+  <section class="toy toy--life" id="orbit" aria-labelledby="orbit-title">
+    <div class="toy__text">
+      <p class="eyebrow reveal">Play · a small one</p>
+      <h3 class="toy__title reveal" id="orbit-title">Everyone who walks through your life</h3>
+      <p class="toy__lede reveal">You're the dot in the middle. Tap anywhere to let someone in, and watch what time does to the orbit.</p>
+      <p class="toy__stats" id="orbit-stats" aria-live="polite">In orbit: 0 · Stayed: 0 · Passed through: 0</p>
+      <button class="btn btn--ghost btn--small" type="button" id="orbit-add">Let someone in</button>
+    </div>
+    <div class="toy__stage reveal">
+      <canvas id="orbit-canvas" role="img" aria-label="A glowing dot in the middle with smaller coloured dots orbiting it. Tap to add one."></canvas>
+      <p class="toy__whisper" id="orbit-whisper" aria-hidden="true">Some stay for a chapter. <em>Some stay for the whole story.</em></p>
+    </div>
+  </section>
+</section>
+
+<!-- fly-through: lessons to science -->
+<div class="fly" data-fly>
+  <div class="fly__sticky">
+    <p class="fly__line" data-range="0.02,0.52">Some rules are about <em>us</em>.</p>
+    <p class="fly__line" data-range="0.42,0.96">Some are about <em>everything.</em></p>
+  </div>
+</div>
+
+<!-- ============ WORLD II: SCIENCE PROBLEMS ============ -->
+<section class="world world--science" id="science" data-world="science" aria-labelledby="science-title">
+  <header class="world__intro">
+    <p class="world__num reveal" aria-hidden="true">II</p>
+    <h2 class="world__title reveal" id="science-title">Science Problems</h2>
+    <p class="world__lede reveal">Math, computer science, chemistry and AI discoveries, made visible. Every number on screen is computed for real.</p>
+  </header>
+
+  <div class="pair">
+    <article class="station station--grid reveal" style="--tone: var(--ice)">
+      <figure class="frame">
+        <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/collatz.jpg" data-src="assets/video/collatz.mp4" aria-label="Animation: numbers bouncing down a logarithmic graph"></video>
+        <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+        <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+      </figure>
+      <div class="caption">
+        <p class="caption__kicker"><span>Math</span> Unsolved · 52 s</p>
+        <h3 class="caption__title">Why Does Every Number Fall to 1?</h3>
+        <p class="caption__hook">Even? Halve it. Odd? Triple it and add one. A rule a child can follow, and a problem nobody has solved.</p>
+      </div>
+    </article>
+
+    <article class="station station--grid reveal" style="--tone: var(--peach)">
+      <figure class="frame">
+        <video muted playsinline loop preload="none" width="720" height="1280" poster="assets/video/dominoes.jpg" data-src="assets/video/dominoes.mp4" aria-label="Animation: a chain of dominoes growing in size"></video>
+        <button class="frame__sound" type="button" aria-pressed="false"><span class="sr">Sound</span></button>
+        <button class="frame__play" type="button" hidden><span class="sr">Play</span></button>
+      </figure>
+      <div class="caption">
+        <p class="caption__kicker"><span>Physics</span> Real numbers · 45 s</p>
+        <h3 class="caption__title">Can a Tiny Domino Topple a Skyscraper?</h3>
+        <p class="caption__hook">A domino can knock over one about 1.5 times its size. Start with one 5 millimetres tall, and keep going.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- Toy 2: Collatz -->
+  <section class="toy toy--collatz" id="play" aria-labelledby="collatz-title">
+    <div class="collatz__head">
+      <p class="eyebrow reveal">Play · pick any number</p>
+      <h3 class="toy__title reveal" id="collatz-title">Watch your number fall to 1</h3>
+      <p class="toy__lede reveal">Even? Halve it. Odd? Triple it and add one. Repeat. Type any whole number (yes, even a 100-digit one) and watch where the rule takes it.</p>
+    </div>
+    <form class="collatz__form reveal" id="collatz-form" autocomplete="off">
+      <label class="sr" for="collatz-input">Your number</label>
+      <input id="collatz-input" name="n" type="text" inputmode="numeric" placeholder="27" maxlength="320" spellcheck="false">
+      <button class="btn btn--ice" type="submit">Drop it</button>
+      <div class="chips" role="group" aria-label="Try these">
+        <button type="button" data-n="7">7</button>
+        <button type="button" data-n="27">27</button>
+        <button type="button" data-n="97">97</button>
+        <button type="button" data-n="871">871</button>
+        <button type="button" data-n="63728127">63,728,127</button>
+        <button type="button" data-n="random">A random 40-digit number</button>
+      </div>
+    </form>
+    <div class="collatz__stage reveal">
+      <canvas id="collatz-canvas" role="img" aria-label="Graph of the number's path down to 1."></canvas>
+      <div class="collatz__readout">
+        <p id="collatz-result" aria-live="polite">Pick a number to begin.</p>
+        <button class="linkish" type="button" id="collatz-share" hidden>Copy a link to this number</button>
+      </div>
+    </div>
+    <p class="fact reveal">Computers have checked every starting number below 2<sup>71</sup> (about 2.36 sextillion), and every one of them reaches 1. Nobody has proved that every number does. It's called the Collatz conjecture. <a href="https://doi.org/10.1007/s11227-025-07337-0" target="_blank" rel="noopener">Source</a></p>
+  </section>
+</section>
+
+<!-- ============ SCIENCE NEWS (small) ============ -->
+<section class="news" id="news" data-world="news" aria-labelledby="news-title">
+  <div class="news__inner">
+    <p class="world__num world__num--small reveal" aria-hidden="true">III</p>
+    <h2 class="news__title reveal" id="news-title">Science news, <em>in under a minute</em></h2>
+    <p class="news__lede reveal">When something big is found, like the year's Nobel Prizes or a telescope seeing what it shouldn't, we turn the paper into a short you can follow: what was found, why it matters, and where it came from.</p>
+    <ul class="news__tags reveal" aria-label="The kind of stories we cover">
+      <li>Nobel Prizes</li><li>Space</li><li>Medicine</li><li>Strange animals</li><li>Deep time</li>
+    </ul>
+    <a class="btn btn--ghost reveal" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg" target="_blank" rel="noopener">See the latest on YouTube</a>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about" data-world="about" aria-labelledby="about-title">
+  <div class="about__head">
+    <p class="eyebrow reveal">How it's made</p>
+    <h2 class="about__title reveal" id="about-title">No cameras. No stock footage. <em>Just code and care.</em></h2>
+  </div>
+  <ol class="about__list">
+    <li class="star reveal">
+      <span class="star__dot" aria-hidden="true"></span>
+      <h3>Drawn in code</h3>
+      <p>Every frame is drawn by a program: dots, light and a little physics. No stock clips, no AI-generated pictures. If something moves, someone wrote the rule that moves it.</p>
+    </li>
+    <li class="star reveal">
+      <span class="star__dot" aria-hidden="true"></span>
+      <h3>Music composed in code</h3>
+      <p>The music is written by code too, note by note, and timed so the strings arrive right when the story turns.</p>
+    </li>
+    <li class="star reveal">
+      <span class="star__dot" aria-hidden="true"></span>
+      <h3>Every fact sourced</h3>
+      <p>Numbers are checked against the papers and records they come from, and the sources are listed under every video.</p>
+    </li>
+    <li class="star reveal">
+      <span class="star__dot" aria-hidden="true"></span>
+      <h3>Every quote verified</h3>
+      <p>Famous names attract fake quotes. Each quote we use is traced back to where it was first printed. If it can't be traced, it doesn't go in.</p>
+    </li>
+  </ol>
+</section>
+
+<!-- ============ THE VIEW BACK ============ -->
+<section class="finale" id="end" data-world="end" aria-labelledby="end-title">
+  <div class="finale__inner">
+    <p class="finale__whisper reveal">Look back. That line of light is the road you just travelled.</p>
+    <h2 class="finale__title reveal" id="end-title">Come wonder <em>with us.</em></h2>
+    <div class="hero__cta reveal">
+      <a class="btn btn--gold" href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg?sub_confirmation=1" target="_blank" rel="noopener">Subscribe on YouTube</a>
+      <a class="btn btn--ghost" href="#hero" data-restart>Back to the first dot</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <p class="foot__brand"><span class="brand__dot" aria-hidden="true"></span> Only Wonder</p>
+  <p><a href="https://www.youtube.com/channel/UCoZo_jsQF54jK59dMRLeslg" target="_blank" rel="noopener">YouTube</a></p>
+  <p class="foot__small">This page is drawn in code too. Type: Cormorant Garamond and Jost, used under the SIL Open Font License (<a href="assets/fonts/OFL-cormorantgaramond.txt">Cormorant</a>, <a href="assets/fonts/OFL-jost.txt">Jost</a>).</p>
+  <p class="foot__small">© 2026 Only Wonder</p>
+</footer>
+
+<script src="assets/js/sky.js" defer></script>
+<script src="assets/js/site.js" defer></script>
+<script src="assets/js/toys.js" defer></script>
+</body>
+</html>

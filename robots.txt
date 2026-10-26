@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hamburgermana3445.github.io/onlywonder/sitemap.xml
